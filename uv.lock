@@ -408,7 +408,7 @@ wheels = [
 
 [[package]]
 name = "gshock-api"
-version = "2.0.46"
+version = "2.0.47"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "bleak" },
@@ -418,10 +418,11 @@ dependencies = [
     { name = "twine" },
     { name = "types-requests" },
     { name = "typing-extensions" },
+    { name = "tzlocal" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2c/6e/fbabe0bf93003d8eec2a5661114dfec5d2195bf812b515dab1ff152ed5ad/gshock_api-2.0.46.tar.gz", hash = "sha256:a5d351ad004ddb693c9c9a9815be57378525364be1d435b8d33ef473fa498854", size = 59921, upload-time = "2026-08-18T13:35:17.953Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/fc/01/4599a545ad181aaf6b183386f51ff934bc44930c73a59234a22d29f63b06/gshock_api-2.0.47.tar.gz", hash = "sha256:7a228616057912ffa80e2e07182509c66904aaf00675cf3b688215ee0894a70d", size = 67024, upload-time = "2026-09-07T14:19:39.947Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e8/14/2859f341990a4db5aef16958d603002a45b05f5a0990d1581df521db2760/gshock_api-2.0.46-py3-none-any.whl", hash = "sha256:87df6d45cdfc6bc20859f0eac0667ade044c16046ccceebb61e9f7ff44e99b5a", size = 72698, upload-time = "2026-08-18T13:35:16.972Z" },
+    { url = "https://files.pythonhosted.org/packages/b2/1b/3c1c58e78c904d7560efb58012bc1435466dfb80061c95ec16e9a768ac9d/gshock_api-2.0.47-py3-none-any.whl", hash = "sha256:4c6cc4a22d598957b1ac1be895d5d00b4e25cd28fc410659b76e81f9654ef8d8", size = 79609, upload-time = "2026-09-07T14:19:38.949Z" },
 ]
 
 [[package]]
@@ -445,7 +446,7 @@ testing = [
 [package.metadata]
 requires-dist = [
     { name = "bleak", specifier = ">=1.0.1" },
-    { name = "gshock-api", specifier = ">=2.0.46" },
+    { name = "gshock-api", specifier = ">=2.0.47" },
     { name = "pytest", marker = "extra == 'testing'" },
     { name = "pytest-cov", marker = "extra == 'testing'" },
     { name = "pytz", specifier = ">=2025.2" },
@@ -997,6 +998,27 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/a3/26/b09b8010994eccc3c09092e6b34058f36a460eea2d4c3e8b910c695975a0/typing_inspection-0.4.4.tar.gz", hash = "sha256:547274fa6b0a561ccf549cc9524b999a578e737d015d8709d021f9d0d13bea47", size = 76928, upload-time = "2026-08-12T12:37:25.997Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl", hash = "sha256:65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147", size = 14750, upload-time = "2026-08-12T12:37:24.648Z" },
+]
+
+[[package]]
+name = "tzdata"
+version = "2026.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/92/ff/5a28bdfd8c3ebec42564ac7d0e54ca3db65044a9314a97f9564fa7a1e926/tzdata-2026.3.tar.gz", hash = "sha256:4a1518b8993086a7982523e071643f3c0e5f213e75b21318e78bcabfff9d1415", size = 198674, upload-time = "2026-07-10T08:50:37.887Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e5/6d/b53b99a9f2766d095985947a5782f1702cabb129a34f7a802d7197af832f/tzdata-2026.3-py2.py3-none-any.whl", hash = "sha256:dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931", size = 348168, upload-time = "2026-07-10T08:50:36.46Z" },
+]
+
+[[package]]
+name = "tzlocal"
+version = "5.4.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "tzdata", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/81/5b/879b2f932adfa7a053c360d50bc896c977fa6426109185f7c12ebdd0cb9d/tzlocal-5.4.4.tar.gz", hash = "sha256:8dbb8660838688a7b6ba4fed31d18dedf842afb4d47ca050d6d891c2c15f3be4", size = 31170, upload-time = "2026-06-29T08:03:40.026Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9e/a4/017a7a6cbe387d961a688ec31364ae60a5c4e22c96ae9921b79a947c855d/tzlocal-5.4.4-py3-none-any.whl", hash = "sha256:aae09f0126a8a86fa736be266eb4a471380d26a0de3bc14844e7821fee3e2a15", size = 18115, upload-time = "2026-06-29T08:03:38.666Z" },
 ]
 
 [[package]]
