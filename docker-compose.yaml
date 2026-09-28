@@ -1,0 +1,13 @@
+services:
+  gshock:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gshock-time-server
+    restart: unless-stopped
+
+    volumes:
+      - /run/dbus:/run/dbus:ro
+
+    environment:
+      - BLEAK_DBUS_AUTH_UID=0
