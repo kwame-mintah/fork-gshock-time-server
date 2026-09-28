@@ -105,7 +105,22 @@ uv run src/gshock-server/gshock_server.py
 
 The optional `--fine-adjustment-secs` allows you to fine adjust the time setting by providing an offset in seconds.
 
-### 3.2 On Raspberry Pi with Display
+### 3.2 Running on Raspberry Pi in container
+
+Provided your Raspberry Pi is able to run containers without any issues, you can run headless mode within a container,
+using the hosts Pi bluetooth socket as a mount. Ensure that [`bluez`](https://salsa.debian.org/bluetooth-team/bluez) is installed and running.
+
+1. Start the `gshocktimeserver` service with `docker compose up -d`,
+   1. Wait for the image to finish building,
+   2. A new compose stack will be created with `gshock-time-server` running.
+2. Logs are visible on `docker container logs gshock-time-server`.
+
+> [!NOTE]
+> **WARNING: Could not determine BlueZ version, bluetoothctl not available, assuming 5.55**
+> 
+> This is a valid warning message, however can be ignored. As long as the host machine has `bluez` installed, should be able to connect without any issues.
+
+### 3.3 On Raspberry Pi with Display
 
 On the Pi devices, you can also connect a small LCD display to monitor the operation of the server.
 
