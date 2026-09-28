@@ -112,8 +112,9 @@ using the hosts Pi bluetooth socket as a mount. Ensure that [`bluez`](https://sa
 
 1. Start the `gshocktimeserver` service with `docker compose up -d`,
    1. Wait for the image to finish building,
-   2. A new compose stack will be created with `gshock-time-server` running.
-2. Logs are visible on `docker container logs gshock-time-server`.
+   2. A new compose stack will be created with `gshock-time-server` running,
+2. Logs are visible on `docker container logs gshock-time-server`,
+3. Stop the stack and service(s) with `docker compose down`.
 
 > [!NOTE]
 > **WARNING: Could not determine BlueZ version, bluetoothctl not available, assuming 5.55**
